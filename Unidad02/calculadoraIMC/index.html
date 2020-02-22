@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio Javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body onload="main();">
+	<main>
+		<div class="title">
+			<img src="img/imc.png">
+			<h1>Calculadora IMC</h1>
+		</div>
+		<div class="arguments">
+			<div>
+				<label>Peso:</label>
+				<input type="text" id="peso" placeholder="Peso(g)">
+			</div>
+			<div style="padding: 15px;">
+			</div>
+			<div>
+				<label>Altura:</label>
+				<input type="text" id="altura" placeholder="Altura(cm)">
+			</div>
+		</div class=button>
+		<div class="button">
+			<input id="calcular" type="button" onclick="imc();" value="Calcular">
+		</div>
+		<div class="results">
+			<div>
+				<label>IMC: </label>
+				<input type="text" id="imc" disabled>
+			</div>
+			<div>
+				<label id="position">Usted se encuentra en el rango de </label>
+			</div>
+		</div>
+
+		<div class="table">
+			<h2>Tabla</h2>
+			<table>
+				<thead>
+					<th>índice</th>
+					<th>Rango</th>
+				</thead>
+				<tr>
+					<td>18.4 o menos</td>
+					<td>Peso insuficiente</td>
+				</tr>
+				<tr>
+					<td>18.5 - 24.9</td>
+					<td>Normopeso</td>
+				</tr>
+				<tr>
+					<td>25 - 29.9</td>
+					<td>Sobrepeso</td>
+				</tr>
+				<tr>
+					<td>30 - 34.9</td>
+					<td>Obesidad de tipo I</td>
+				</tr>
+				<tr>
+					<td>35 - 39.9</td>
+					<td>Obesidad de tipo II</td>
+				</tr>
+				<tr>
+					<td>40 - 49.9</td>
+					<td>Obesidad de tipo III (mórbida)</td>
+				</tr>
+				<tr>
+					<td>50 o más</td>
+					<td>Obesidad de tipo IV (extrema)</td>
+				</tr>
+			</table>
+		</div>
+	</main>
+</body>
+</html>
+<script type="text/javascript" src="js/code.js"></script>

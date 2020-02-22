@@ -1,0 +1,59 @@
+body{
+	width: 45%;
+	background-color: #00171e;
+	margin: auto;
+	font-family: Verdana,sans-serif;
+	font-size: 13px;
+	line-height: 1.3;
+}
+
+.personal{
+	display: flex;
+}
+
+.container{
+	background-color: #f7f4e6;
+}
+
+.info{
+	padding: 0px 20px 0px 20px;
+}
+
+p{
+	text-align: justify;
+}
+
+.info h2{
+	color: #e3e8e4;
+	background-color: #003849;
+}
+
+.container{
+	padding: 5px;
+	background-color: white;
+}
+
+.education dt{
+	font-weight: bold;
+}
+
+.photo{
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+.me{
+	padding: 5px;
+	color: black;
+}
+
+.xperience li{
+	text-align: justify;
+}
+

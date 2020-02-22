@@ -1,0 +1,103 @@
+body{
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+	background-color: #000;
+	margin: auto;
+	font-size: 12px;
+}
+
+header h1 {
+	font-family: 'Bangers';
+	font-size: 32px;
+	letter-spacing: 5px;
+	text-align: center;
+	color: #ff0000;
+}
+
+.container{
+	padding: 10px;
+}
+
+ul{
+	margin: 0;
+  	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #222222;
+}
+
+li a{
+	float: left;
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover{
+	background-color: #333333;
+}
+
+.name{
+	font-size: 14px;
+	color: white;
+	text-align: right;
+	padding: 14px 16px;
+}
+
+.music_video{
+	padding-top: 40px;
+	width: 1000px;
+	height: 500px;
+}
+
+footer{
+	background-color: black;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+	margin-right: 50px;
+}
+
+.main{
+	color: white;
+	padding: 20px;
+	width: 40%;
+	margin-bottom: 5%;
+}
+
+.main h1, h2, h3{
+	text-align: left;
+}
+
+.main p{
+	text-align: justify;
+}
+
+.main ul{
+	text-align: left;
+	list-style-type: none;
+	background-color: black;
+}
+
+.info{
+	display: flex;
+}
+
+.info h2{
+	margin-left: 20px;
+}
+
+img{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+}

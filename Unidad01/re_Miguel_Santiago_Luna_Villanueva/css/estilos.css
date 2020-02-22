@@ -1,0 +1,115 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #222222;
+	margin: auto;
+	text-transform: initial;
+	font-size: 12px;
+}
+
+.container{
+	margin: auto;
+	width: 60%;
+	background-color: #dedede;
+	padding: 10px;
+}
+
+h1{
+	text-align: center;	
+}
+
+.info_container{
+	display: flex;
+}
+
+.photo{
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+.info{
+	padding: 5px;
+}
+
+
+.navbar{
+	padding-top: 20px;
+}
+
+ul{
+	border-radius: 2%;
+	margin: 0;
+  	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #263a5b;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	color: white;
+  	padding: 14px 16px;
+  	text-decoration:none;
+}
+
+li a:hover{
+	border-radius: 5%;
+	background-color: #9e9e9e;
+}
+
+main{
+	display: flex;
+	padding: 10px;
+}
+
+.section{
+	text-align: justify;
+	width: 70%;
+}
+
+aside{
+	margin: 10px;
+	width: 250px;
+}
+
+.articulo h2{
+	text-align: center;
+}
+
+.articulo p{
+	padding: 5px;
+	text-align: justify;
+}
+
+footer{
+	padding: 20px 0;
+	background-color: black;
+}
+
+footer p{
+	padding-right: 90px;
+	color: #333;
+	text-align: center;
+}
+
+.footer_container{
+	text-align: center;
+}
+
+.footer_container a{
+	text-decoration:none;
+	color: #333;
+}
+
+.footer_container i{
+	padding-right: 50px;
+}

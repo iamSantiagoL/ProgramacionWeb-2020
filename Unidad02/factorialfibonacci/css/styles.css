@@ -1,0 +1,25 @@
+body{
+	font-family: Robot, sans-serif;
+	width: 60%;
+	margin: auto;
+	background-color: #9f2d2d;
+
+}
+
+h2{
+	text-align: center;
+	margin-top: 0;
+}
+
+main{
+	padding: 0%;
+	background-color: #ffffff;
+}
+
+div{
+	padding: 5px;
+}
+
+.operacion div{
+	display: block;
+}

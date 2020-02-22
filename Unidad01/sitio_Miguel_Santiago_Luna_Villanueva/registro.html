@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+	<header>
+		<div class="logo">
+			<img class="logo_image" src="img/ralogo_monogram.png">
+		</div>
+		<div style="width: 20%" >
+				<h6>Roux Academy</h6>
+				<h6>Art + Media + Design</h6>
+			</div>
+		<div style="width: 70%; padding-left: 30px; padding-right: 100px;">
+			<h2>Roux Academy 2016 Art Conference</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</p>
+		</div>
+	</header>
+	<nav class="navbar">
+		<ul>
+			<li>home</li>
+			<li>artists</li>
+			<li>schedule</li>
+			<li>venue/travel</li>
+			<li>register</li>
+		</ul>
+	</nav>
+
+	<div>
+		<img class="art" src="img/art01.jpg">
+	</div>
+
+	<main>
+		<div style="width: 60%;" class="register">
+			<h3>Register</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			<h4>Personal Info</h4>
+			<form>
+				<label>Name*</label>
+				<input type="text" name="f_name" id="f_name" required placeholder="Nombre" autocomplete="off">
+				<br>
+
+				<label>Company Name</label>
+				<input type="text" name="l_name" id="l_name" required placeholder="Apellido" autocomplete="off">
+				<br><br>
+
+				<label>Email*</label>
+				<input type="text" name="email" id="email" required placeholder="ejemplo@ejemplo.com" autocomplete="off">
+
+				<div>
+					<label>Request Type</label>
+					<input type="radio" name="genero" id="genero" value="M">Question
+					<input type="radio" name="genero" id="genero" value="F">Comment
+				</div>
+				<br>
+				<input type="checkbox" name="hobby" id="hobby" value="1">Subscribe to out mailing list?
+				<br>
+
+				<label>How did you hear about us?</label>
+				<select>
+					<option></option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+				</select>
+				<br><br>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div style="width: 40%;" class="featured_artist">
+			<h3>Featured Artist</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="featured_artist_img">
+				<div class="artists">
+					<img src="img/artists/Barot_Bellingham_tn.jpg">
+					<img src="img/artists/Barot_Bellingham_tn.jpg">
+					<img src="img/artists/Barot_Bellingham_tn.jpg">
+				</div>
+				<div class="artists">
+					<img src="img/artists/Barot_Bellingham_tn.jpg">
+					<img src="img/artists/Barot_Bellingham_tn.jpg">
+					<img src="img/artists/Barot_Bellingham_tn.jpg">
+				</div>
+				<div class="artists">
+					<img src="img/artists/Barot_Bellingham_tn.jpg">
+					<img src="img/artists/Barot_Bellingham_tn.jpg">
+					<img src="img/artists/Barot_Bellingham_tn.jpg">
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer_container">
+			<div class="footer_left">
+				<img style="width: 60%;" class="logo_image" src="img/ralogo_monogram.png">
+				<div class="text">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+				</div>
+			</div>
+			<div class="footer_right">
+				<p>About the Roux Academy | Pivacy Policy | Visit our website</p>
+			</div>
+		</div>
+	</footer>
+</div>
+
+	<!--<form>
+		<label>Nombre</label>
+		<input type="text" name="f_name" id="f_name" required placeholder="Nombre" autocomplete="off">
+
+		<label>Apellido</label>
+		<input type="text" name="l_name" id="l_name" required placeholder="Apellido" autocomplete="off">
+		<br><br>
+
+		<label>Correo</label>
+		<input type="text" name="email" id="email" required placeholder="ejemplo@ejemplo.com" autocomplete="off">
+
+		<label>Contraseña</label>
+		<input type="password" minlength="8" name="password" id="password" placeholder="Contraseña">
+		<br><br>
+
+		<div>
+			<label>Género: </label>
+			<input type="radio" name="genero" id="genero" value="M">Masculino
+			<input type="radio" name="genero" id="genero" value="F">Femenino
+		</div>
+		<br>
+
+		<div>
+			<label>Pasatiempo: </label>
+			<input type="checkbox" name="hobby" id="hobby" value="1">Leer
+			<input type="checkbox" name="hobby" id="hobby" value="2">Tocar un instrumento
+			<input type="checkbox" name="hobby" id="hobby" value="3">Dibujar
+			<input type="checkbox" name="hobby" id="hobby" value="4">Hacer ejercicio
+		</div>
+		<br>
+
+		<label>Universidad</label>
+		<select>
+			<option></option>
+			<option>Universidad Tecnológica de Victoria</option>
+			<option>Universidad Autónoma de Tamaulipas</option>
+			<option>Universidad Politécnica de Victoria</option>
+		</select>
+		<br><br>
+
+		<input type="submit" value="Aceptar">
+	</form>-->
+</body>
+</html>

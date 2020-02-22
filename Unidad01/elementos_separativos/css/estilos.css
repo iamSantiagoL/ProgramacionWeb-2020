@@ -1,0 +1,50 @@
+body{
+	width: 60%;
+	background-color: #222222;
+	margin: auto;
+	text-transform: initial;
+}
+
+*{
+	padding: 10px;
+	margin-top: 5px;
+}
+
+.container{
+	background-color: #83a0a0;
+}
+
+header{
+	background-color: #ffffff;
+}
+
+nav{
+	background-color: #4b4e6d;
+}
+
+main{
+	background-color: #f9b20c;
+	display: flex;
+}
+
+section{
+	background-color: #2b3d41;
+}
+
+.section{
+	width: 85%;
+	color: #ffffff;
+	text-align: justify;
+}
+
+aside{
+	background-color: #abfaa9;
+}
+
+article{
+	background-color: #82d173;
+}
+
+footer{
+	background-color: #71b48d;  
+}

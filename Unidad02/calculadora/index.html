@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=UTF-8>
+	<link rel=stylesheet href="assets/css/styles.css">
+	<title>Calculadora</title>
+</head>
+<body>
+<div class="container">
+	<div class="title">
+		<h2>Calculadora</h2>
+	</div>
+	<div class="calculator">
+		<div class="display" id="display">
+			<label id="lbl_display" class="lbl_display">0</label>
+		</div>
+		<div class="options">
+			<label for="On">On</label>
+			<input type="radio" name="rb_option" id="on" value="on" onclick="change()" onfocus>
+			<label for="On">Off</label>
+			<input type="radio" name="rb_option" id="off" value="off" onclick="change()">
+		</div>
+		<div class="buttons">
+			<button onclick="presionar(7)">7</button>
+			<button onclick="presionar(8)">8</button>
+			<button onclick="presionar(9)">9</button>
+			<button class="operator" onclick="presionar('+')">+</button>
+		</div>
+		<div class="buttons">
+			<button onclick="presionar(4)">4</button>
+			<button onclick="presionar(5)">5</button>
+			<button onclick="presionar(6)">6</button>
+			<button class="operator" onclick="presionar('-')">-</button>
+		</div>
+		<div class="buttons">
+			<button onclick="presionar(1)">1</button>
+			<button onclick="presionar(2)">2</button>
+			<button onclick="presionar(3)">3</button>
+			<button class="operator" onclick="presionar('x')">x</button>
+		</div>
+		<div class="buttons">
+			<button class="clean" id="clean" onclick="clean()">c</button>
+			<button onclick="presionar(0)">0</button>
+			<button id="equal" onclick="presionar('=')">=</button>
+			<button class="operator" onclick="presionar('/')">/</button>
+		</div>
+	</div>
+</div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=UTF-8>
+	<link rel=stylesheet href=css/styles.css>
+	<title>Javascript 03</title>
+</head>
+
+<body>
+
+	<main>
+		<h2>Calculadora Fibonacci/Factorial</h2>
+		<div class="datos">
+			<div class="operacion">
+				<label>Operación</label><br>
+				<div class="factorial">
+					<label for="factorial">Factorial</label>
+					<input type="radio" name="operacion" id="factorial" value="fact">
+				</div>
+				<div class="fibonacci">
+					<label for="fibonacci">Fibonacci</label>
+					<input type="radio" name="operacion" id="fibonacci" value="fib">
+				</div>
+			</div>
+
+			<div class="valor">
+				<label>Valor</label>
+				<input type="number" name="valor" id="valor" required min="0">
+			</div>
+			<input type="button" value="Calcular" onclick="calcular()" id="calcular">
+		</div>
+
+		<div class="resultado">
+			<label for="resultado">Resultado</label>
+			<input type="text" name="resultado" id="resultado" disabled>
+		</div>
+	</main>
+
+</body>
+<script src=js/script.js></script>
+
+</html>

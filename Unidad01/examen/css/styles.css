@@ -1,0 +1,172 @@
+*{
+	/*vertical-align: top;*/
+}
+
+body {
+	background-image: url("../img/background_buildings.png");
+	background-position: center;
+	width: 70%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	margin: auto;
+}
+
+.container{
+	margin: auto;
+}
+
+header{
+	background-color: black;
+	color: white;
+	display: flex;
+}
+
+.logo{
+	width: 10%;
+	padding-left: 60px;
+	display: flex;
+}
+
+.logo_image{
+	width: 100px;
+	margin: auto;
+
+}
+
+.navbar{
+	background-image: linear-gradient(to left, #ffffff, #fa9626);
+}
+
+ul{
+	margin: auto;
+  	padding: auto;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+li{
+	text-transform: uppercase;
+	float: left;
+	display: block;
+	padding: 12px 16px;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+}
+
+li:hover{
+	font-style: italic;
+}
+
+.art{
+	width: 100%;
+}
+
+main{
+	background-color: white;
+    display: flex;
+    padding: 50px;
+}
+
+.register{
+    width: 60%;
+    scroll-padding-right: 30px;
+}
+
+
+footer{
+	color: white;
+	background-color: #222222;
+}
+
+.footer_container{
+	display: flex;
+	padding: 15px 30px 60px 15px;
+}
+
+.footer_left{
+	width: 50%;
+	display: flex;
+}
+
+.text{
+	padding-left: 15px;
+	padding-right: 80px;
+}
+
+.artists img{
+    padding: 5px;
+	width: 80px;
+	height: 80px;
+}
+
+.artists_home img{
+    padding: 5px;
+	width: 120px;
+}
+
+.art, .featured_artist_img{
+	display: flex;
+}
+
+.art img{
+    padding: 5px;
+	width: 80px;
+	height: 80px;
+}
+
+.labelinput{
+    width: 80%;
+    display: flex;
+}
+
+.labelinput label{
+    width: 30%;
+}
+
+.labelinput input{
+    width: 50%;
+}
+
+.requesttype{
+    padding-left: 25%;
+}
+
+form div{
+    padding-bottom: 10px;
+}
+
+.artist_info div{
+    display: flex;
+}
+
+.artist_info div img{
+    width: 100px;
+    height: 100px;
+}
+
+.venue2{
+	display: flex;
+	padding-bottom: 30px;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	margin-bottom: 10px;
+}
+
+.thevenue_main{
+	padding-bottom: 20px;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	margin-bottom: 10px;
+}
+
+.venue2 img{
+	width: 150px;
+	height: 150px;
+}
+
+.venue2 div{
+	padding-left: 15px;
+}
