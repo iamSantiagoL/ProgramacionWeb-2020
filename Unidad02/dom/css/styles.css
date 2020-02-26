@@ -1,0 +1,60 @@
+/*@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+*/
+body{
+    /*font-family: 'Raleway';*/
+    font-weight: 12;
+    width: 60%;
+    background-color: rgb(148, 23, 23);
+    margin: auto;
+}
+
+
+.container{
+    padding: 50px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+h2{
+    text-align: center;
+}
+
+.data{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.input_number{
+    font-size: 14;
+    width: 10%;
+    color: rgb(73, 73, 73);
+    text-align: right;
+}
+
+.button_div{
+    display: flex;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+#table_div{
+    display: flex;
+	justify-content: space-around;
+	padding: 2px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: right;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

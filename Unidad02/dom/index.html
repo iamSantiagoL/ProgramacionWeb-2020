@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Table generator</title>
+</head>
+<body>
+<div class="container" id="container">
+	<h2>Table Generator</h2>
+	<div class="data">
+		<div class="number_to">
+			<label for="number_table">Tabla: </label>
+			<select name="number_table" id="number_table">
+				<!-- Options -->
+			</select>
+		</div>
+		<div style="padding: 20px;"></div>
+		<div class="limit_number">
+			<label for="input_number">Top number</label>
+			<input type="text" class="input_number" id="input_number" maxlength="4" onkeypress="validate()">
+		</div>
+	</div>
+	<div class="button_div">
+		<button onclick="calculate_table()">Calcular tabla</button>
+	</div>
+</div>
+</body>
+<script src="js/script.js"></script>
+</html>
