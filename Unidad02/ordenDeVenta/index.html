@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=UTF-8>
+	<link rel=stylesheet href=css/styles.css>
+	<title>Orden de Venta</title>
+</head>
+<body>
+	<div class="container">
+		<h2>Orden de Venta</h2>
+		<div class="product_div">
+			<label for="product">Producto: </label>
+			<br>
+			<select name="product" id="product">
+				<option id="product" value="">Seleccione..</option>
+				<option id="product" value="Playstation 4">Playstation 4</option>
+				<option id="product" value="Xbox One">Xbox One</option>
+				<option id="product" value="Nintendo Switch">Nintendo Switch</option>
+				<option id="product" value="Nintendo 3DS">Nintendo 3DS</option>
+			</select>
+		</div>
+		<div class="precio_div">
+			<label for="price">Precio: </label>
+			<br>
+			<input type="text" id="price">
+		</div>
+
+		<div class="units_div">
+			<label for="units">Unidades: </label>
+			<br>
+			<input type="text" id="units">
+		</div>
+
+		<div style="padding: 5px;">
+			<button onclick="add()">Agregar</button>
+		</div>
+
+		<div class="table">
+			<table id="products_table">
+				<tr>
+					<th>N°</th>
+					<th>Producto</th>
+					<th>Precio unitario</th>
+					<th>Unidades</th>
+					<th>Monto</th>
+				</tr>
+				<tr id="preproducts">
+					<th colspan="4">Subtotal</th>
+					<th id="subtotal">0</th>
+				</tr>
+				<tr>
+					<th colspan="4">IVA</th>
+					<th id="iva">0</th>
+				</tr>
+				<tr>
+					<th colspan="4">Total a pagar</th>
+					<th id="total">0</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+<script src=js/script.js></script>
+</html>

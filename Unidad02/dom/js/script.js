@@ -46,12 +46,15 @@ function calculate_table(){
     if(max<1){
         alert("Not valid value");
     }else{
-        generateTable(number, max);
+        if(max>19){
+            generateTableVertical(number,max);
+        }else{
+            generateTableHorizontal(number, max);
+        }
     }
 }
 
-
-function generateTable(number, max){
+function generateTableVertical(number, max){
     if(document.body.contains(document.getElementById('table_div'))){
         var list = document.getElementById('table_div');
         list.parentNode.removeChild(list);
@@ -62,6 +65,46 @@ function generateTable(number, max){
     var divTable = document.createElement("div");
     var table = document.createElement("table");
     divTable.id = "table_div";
+    table.id = "table_vertical";
+
+    let trh = document.createElement("tr");
+    let th = document.createElement("th");
+    let th2 = document.createElement("th");
+    th.innerHTML = "x";
+    trh.appendChild(th);
+    th2.innerHTML = number;
+    trh.appendChild(th2);
+    table.appendChild(trh);
+    for (let i=1;i<=max;i++){
+        let tr = document.createElement("tr");
+        let v_th = document.createElement("th");
+        v_th.innerHTML = i;
+        let v_td = document.createElement("td");
+        v_td.innerHTML = number*i;
+        tr.appendChild(v_th);
+        tr.appendChild(v_td);
+        table.appendChild(tr);
+    }
+
+    divTable.appendChild(table);
+    container.appendChild(divTable);
+}
+
+
+
+
+function generateTableHorizontal(number, max){
+    if(document.body.contains(document.getElementById('table_div'))){
+        var list = document.getElementById('table_div');
+        list.parentNode.removeChild(list);
+    }else{
+    }
+    let container = document.getElementById("container");
+
+    var divTable = document.createElement("div");
+    var table = document.createElement("table");
+    divTable.id = "table_div";
+    table.id = "table_horizontal";
 
     let tr = document.createElement("tr");
     let th = document.createElement("th");
@@ -87,7 +130,6 @@ function generateTable(number, max){
 
     divTable.appendChild(table);
     container.appendChild(divTable);
-
 }
 
 
