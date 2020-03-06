@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');*/
 body{
     font-family: 'Roboto';
-    width: 60%;
+    width: 40%;
     background-color: gray;
     margin: auto;
 }
@@ -32,4 +32,15 @@ th, td{
     border: 1px solid #5a5a5a;
     text-align: center;
     padding: 5px;
+}
+
+#subtotal, #iva, #total{
+    text-align: left;
+    padding-left: 20px;
+}
+
+@media (max-width: 900px){
+   body{
+       width: 80%;
+   }
 }

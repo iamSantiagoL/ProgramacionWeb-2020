@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset=UTF-8>
+	<link rel="stylesheet" href="extras/font-awesome/css/font-awesome.min.css">
 	<link rel=stylesheet href=css/styles.css>
 	<title>Orden de Venta</title>
 </head>
@@ -35,7 +36,7 @@
 			<button onclick="add()">Agregar</button>
 		</div>
 
-		<div class="table">
+		<div class="table" id="table">
 			<table id="products_table">
 				<tr>
 					<th>N°</th>
@@ -43,18 +44,19 @@
 					<th>Precio unitario</th>
 					<th>Unidades</th>
 					<th>Monto</th>
+					<th>Eliminar</th>
 				</tr>
 				<tr id="preproducts">
 					<th colspan="4">Subtotal</th>
-					<th id="subtotal">0</th>
+					<th id="subtotal" colspan="2">0</th>
 				</tr>
 				<tr>
 					<th colspan="4">IVA</th>
-					<th id="iva">0</th>
+					<th id="iva" colspan="2">0</th>
 				</tr>
 				<tr>
 					<th colspan="4">Total a pagar</th>
-					<th id="total">0</th>
+					<th id="total" colspan="2">0</th>
 				</tr>
 			</table>
 		</div>

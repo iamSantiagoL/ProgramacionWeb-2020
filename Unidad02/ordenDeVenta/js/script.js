@@ -1,5 +1,10 @@
 var n = 1;
 
+function eliminar(){
+    window.onclick = e =>{
+        alert(e.target.value);
+    }
+}
 
 function generateTable(product, price, units){
     let number_td = document.createElement("td");
@@ -7,6 +12,16 @@ function generateTable(product, price, units){
     let price_td = document.createElement("td");
     let units_td = document.createElement("td");
     let tp = document.createElement("td");
+    let del_td = document.createElement("td");
+
+    let btn = document.createElement("button");
+    btn.type = "button";
+    btn.innerText = 'Eliminar';
+    btn.value = n;
+    btn.addEventListener('click',eliminar);
+    
+
+    del_td.appendChild(btn);
 
     number_td.innerText = n;
     product_td.innerText = product;
@@ -20,6 +35,7 @@ function generateTable(product, price, units){
     tr.appendChild(price_td);
     tr.appendChild(units_td);
     tr.appendChild(tp);
+    tr.appendChild(del_td);
 
     var parentElement = document.getElementById("preproducts").parentElement;
     var pre = document.getElementById("preproducts");
