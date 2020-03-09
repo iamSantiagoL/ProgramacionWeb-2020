@@ -1,9 +1,14 @@
 var n = 1;
 
 function eliminar(){
+    var data = 0;
     window.onclick = e =>{
         alert(e.target.value);
+        data = e.target.value;
     }
+    var element = document.getElementById(data);
+    var table = document.getElementById('table');
+    table.removeChild(table.childNodes[2]);
 }
 
 function generateTable(product, price, units){
