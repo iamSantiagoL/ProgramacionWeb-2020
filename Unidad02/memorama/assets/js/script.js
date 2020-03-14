@@ -5,37 +5,101 @@ let lock = false;
 let first, second;
 let ended = false;
 let counter = 0;
-let timeLeft = 90;
+let timeLeft = 60;
 let timer;
+let gameEnded;
 
+let start = document.getElementById('start');
+let reset = document.getElementById('restart');
+
+let pairs = document.getElementById('pairs');
+
+start.style.visibility = 'hidden';
+reset.style.visibility = 'hidden';
+
+$(document).ready(startGame());
 
 //Iniciar juego
+function startGame(){
 Swal.fire({
     title: '¿Deseas iniciar el juego?',
-    text: 'Tienes que encontrar los 6 pares de cartas en menos de 120 segundos',
+    text: 'Tienes que encontrar los 6 pares de cartas en menos de 60 segundos',
     icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#69b9c9',
     cancelButtonColor: '#d33',
-    confirmButtonText: '¡Sí! >:D',
-    cancelButtonText: 'No :('
+    confirmButtonText: '¡Sí!',
+    cancelButtonText: 'No'
 }).then((result => {
     if (result.value) {
+        shuffle();
+        counter = 0;
+        pairs.innerText = 'Pares encontrados: '+counter;
+        gameEnded = setTimeout(endgame, 60000);
+        start.style.visibility = 'hidden';
+        reset.style.visibility = 'visible';
+        reset.addEventListener('click', resetGame);
+        timer = setInterval(function () {
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+            }
+            document.getElementById('timer').innerText = 'Tiempo: ' + timeLeft + ' seg';
+            timeLeft -= 1;
+        }, 1000);
+
         //Asignamos el eventListener a cada una de las cartas
         cards.forEach(function (card) {
             card.addEventListener('click', flip);
         });
-        setTimeout(endgame,90000);
-
-        timer = setInterval(function(){
-            if(timeLeft<=0){
-                clearInterval(timer);
-            }
-            document.getElementById('timer').innerText = 'Tiempo: ' + timeLeft+' seg';
-            timeLeft-=1;
-        },1000);
+    } else {
+        start.style.visibility = 'visible';
+        start.addEventListener('click', startGame);
     }
-}))
+}));
+}
+
+
+function resetGame(){
+    Swal.fire({
+        title: '¿Deseas reiniciar el juego?',
+        text: 'Tienes que encontrar los 6 pares de cartas en menos de 60 segundos',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#69b9c9',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí :$...',
+        cancelButtonText: '¡No!'
+    }).then((result => {
+        if (result.value) {
+            shuffle();
+            counter = 0;
+            pairs.innerText = 'Pares encontrados: '+ counter;
+            resetCards();
+            clearInterval(timer);
+            clearTimeout(gameEnded);
+            newTurn();
+            timeLeft = 60;
+            gameEnded = setTimeout(endgame, 60000);
+            timer = setInterval(function () {
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                }
+                document.getElementById('timer').innerText = 'Tiempo: ' + timeLeft + ' seg';
+                timeLeft -= 1;
+            }, 1000);
+            //Asignamos el eventListener a cada una de las cartas
+            cards.forEach(function (card) {
+                card.addEventListener('click', flip);
+            });
+        }
+    }));
+}
+
+function resetCards(){
+    cards.forEach(function (card) {
+        card.classList.remove('flip');
+    });
+}
 
 
 //función para voltear las cartas
@@ -57,6 +121,7 @@ function flip() {
 
 function game() {
     clearInterval(timer);
+    clearTimeout(gameEnded);
     Swal.fire({
         title: 'Sweet!',
         text: 'Has ganado el juego',
@@ -64,13 +129,13 @@ function game() {
     })
 }
 
-
-function endgame(){
+//Función con alert cuando se pierde el juego
+function endgame() {
     cards.forEach(function (card) {
         card.removeEventListener('click', flip);
     });
     Swal.fire({
-        title: 'Dang!',
+        title: 'Chale :(',
         text: 'No has alcanzado a encontrar todos los pares',
         icon: 'error'
     })
@@ -82,7 +147,7 @@ function check() {
         //console.log('Son iguales');
         disableCards();
         counter++;
-        console.log(counter);
+        pairs.innerText = 'Pares encontrados: '+counter;
         if (counter == 6) {
             game();
         }
@@ -138,7 +203,11 @@ function newTurn() {
 }(jQuery));
 
 //Shuffle cards
-
 function shuffle() {
-
+    var m_cards = $('.card');
+    for(var i = 0; i < cards.length; i++){
+        var target = Math.floor(Math.random() * m_cards.length -1) + 1;
+        var target2 = Math.floor(Math.random() * m_cards.length -1) +1;
+        m_cards.eq(target).before(m_cards.eq(target2));
+    }
 }

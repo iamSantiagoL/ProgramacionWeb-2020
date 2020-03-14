@@ -6,14 +6,57 @@ body{
 }
 
 .tablero{
-    margin: auto;
+    margin-left: 10%;
     width: 45%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .info{
+    text-align: center;
+    width: 20%;
+}
 
+button{
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.10), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#start{
+    background-color: #008cba;
+}
+
+#restart{
+    background-color: #00ba54;
+}
+
+#start:hover{
+    background-color: #006688;
+}
+
+#restart:hover{
+    background-color: #00813a;
+}
+
+button:active{
+    transform: scale(.93);
+}
+
+.timer{
+    text-align: center;
 }
 
 .card{
@@ -25,7 +68,8 @@ body{
 }
 
 .card:active{
-    transform: scale(.95);   
+    transition: 0.4s;
+    transform: scale(.93);   
 }
 
 img{
