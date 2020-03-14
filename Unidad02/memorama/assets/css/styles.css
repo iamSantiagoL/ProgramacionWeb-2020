@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+
+.tablero{
+    margin: auto;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info{
+
+}
+
+.card{
+    width: 135px;
+    height: 185px;
+    margin: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.card:active{
+    transform: scale(.95);   
+}
+
+img{
+    position: absolute;
+    margin: 10px 10px;
+}
+
+img:hover{
+    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.10), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.front-face,
+.back-face {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front-face{
+    transform: rotateY(180deg);
+}
+
+.flip{
+    transform: rotateY(180deg);
+    transition: .8s;
+}

@@ -1,0 +1,39 @@
+body{
+    width: 600px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+.contenedor{
+        padding: 20px;
+        background-color: white;
+    }
+
+.controles{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.resultado-fila{
+    display: block;
+}
+
+input[type="number"]{
+    display: inline-block;
+    text-align: right;
+    width: 40px;
+}
+
+.etiqueta{
+    display: inline-block;
+    width: 100px;
+}
+
+.alerta{
+    color: red;
+}

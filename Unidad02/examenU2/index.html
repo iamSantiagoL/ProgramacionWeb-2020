@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel=stylesheet href=css/styles.css>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aprende las tablas de multiplicar</title>
+</head>
+<body>
+	<div class="contenedor">
+        <h1>TABLAS DE multiplicar</h1>
+        <div class="controles">
+            <label for="tabla" class="etiqueta">Tabla</label>
+            <input type="number" id="tabla">
+            <label for="" id="error_tabla" class="alerta"></label>
+            <br>
+            <label for="resultados" class="etiqueta">Resultados</label>
+            <input type="number" id="resultados" >
+            <label for="" id="error_resultados" class="alerta"></label>
+            <br>
+            <button onclick="generar();" >Calcular</button>
+        </div>
+        <div class="resultados" id="tabla_multiplicar">
+            <!--aqui iran los resultados-->
+        </div>
+    </div>
+</body>
+<script src=js/script.js></script>
+</html>
